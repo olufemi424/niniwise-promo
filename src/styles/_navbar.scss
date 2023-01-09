@@ -1,0 +1,101 @@
+.header {
+    background-color: var(--background-color-dark);
+    left: 0;
+    padding: 24px 0;
+    position: fixed;
+    right: 0;
+    max-height: 118px;
+    z-index: 999;
+
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    .container {
+        margin: auto;
+        padding: 16px;
+        width: 100%;
+
+        @media (min-width: 576px){
+            max-width: 1200px;
+        }
+    }
+
+    &__inner {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__aside {
+        a {
+            color: var(--color-white);
+            font-size: 32px;
+        }
+    }
+
+    &__content {
+        flex: 1;
+        display: flex;
+        margin-inline-start: 60px;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__nav {
+        width: 60%;
+        // deal with the responsive later
+        // @media only screen and (max-width: 707px) {
+        //     ul {
+        //         // background-color: red;
+        //         flex-direction: column;
+        //         height: 100px;
+        //     }
+        // }
+    }
+    &__nav-access {
+        width: 30%;
+    }
+
+    &__nav, &__nav-access {
+        & > ul {
+            display: flex;
+            align-items: center;
+            margin-bottom: 0;
+            justify-content: space-around;
+            position: relative;
+
+            .active {
+                margin-top: -3px;
+                color: #FED700;
+                padding-bottom: 8px;
+                border-bottom: 2px solid #FED700;
+            }
+        }
+
+        a {
+            color: var(--color-white);
+            font-size: 16px;
+            font-weight: 500;
+
+            &:hover {
+                color: #FED700;
+            }
+        }
+
+        .btn {
+            min-width: 122px;
+            padding: 13px 10px;
+            background: #FED700;;
+            border-radius: 4px;
+            color: #181e3a;
+            border: 1px solid #384062;
+        }
+    }
+}

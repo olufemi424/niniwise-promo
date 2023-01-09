@@ -1,0 +1,126 @@
+.home {
+    &-hero {
+        height: 600px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+
+        .container {
+            margin: auto;
+            padding-inline: 16px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+
+            @media (min-width: 576px){
+                max-width: 1200px;
+            }
+        }
+
+        &__page-title {
+            color: var(--color-white);
+            font-size: 60px;
+            text-align: center;
+        }
+
+        &__cta {
+            flex: 1;
+            text-align: center;
+
+            .btn {
+                min-width: 122px;
+                font-size: 24px;
+                padding: 18px 40px;
+                background: #FED700;;
+                border-radius: 4px;
+                color: #181e3a;
+                border: 1px solid #384062;
+            }
+        }
+
+        &__info {
+            flex: 1;
+            padding-inline-end: 32px;
+            color: var(--color-white);
+
+            &-title {
+                font-size: 42px;
+                margin-block: 32px;
+            }
+            &-text {
+                font-size: 18px;
+                line-height: 1.7;
+            }
+        }
+    }
+
+    &__img-container {
+        margin: 80px auto;
+        padding-inline: 16px;
+        display: flex;
+        justify-content: center;
+
+        @media (min-width: 576px){
+            max-width: 1200px;
+        }
+    }
+
+    &__img-image {
+        border: 1px solid var(--background-color-dark);
+        border-radius: 18px;
+        width: 900px;
+        min-width: 500px;
+        object-fit: contain;
+    }
+
+    &-benefit {
+        margin: 0 auto;
+        padding-inline: 16px;
+
+        @media (min-width: 576px){
+            max-width: 1200px;
+        }
+
+        &__title {
+            text-align: center;
+            font-size: 42px;
+            margin-block-end: 32px;
+        }
+
+        &__list {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-gap: 50px;
+        }
+
+        &__list-item {
+            display: flex;
+            box-shadow: 0 4px 26px 5px rgba(#000, 0.10);
+            padding: 16px;
+            border-radius: 8px;
+
+            .icon {
+                width: 60px;
+                height: 20px;
+                background-color: var(--background-color-dark);
+                border-radius: 8px;
+                margin-right: 16px;
+                border: 2px solid #FED700;
+            }
+
+            .details {
+                h5 {
+                    font-size: 18px;
+                    margin-block-end: 16px;
+                    color: var(--color-grey-dark-1);
+                }
+
+                p {
+                    line-height: 1.5;
+                }
+            }
+        }
+    }
+}
