@@ -16,6 +16,12 @@
         }
     }
 
+    &__img {
+        width: 200px;
+        object-fit: cover;
+        border-radius: 8px;
+    }
+
     &__aside {
         color: var(--color-white);
         font-size: 32px;
