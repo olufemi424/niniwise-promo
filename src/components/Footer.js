@@ -1,10 +1,17 @@
 import { NavLink } from "react-router-dom";
+import logo from "../assets/NiniwiseLogo.jpeg"
 const Footer = () => {
     return (
         <footer className="footer">
             <div className="footer__container">
                 <div className="footer__aside">
-                    <h3>Niniwise</h3>
+                    <a href="/">
+                        <img
+                            className="footer__img"
+                            src={ logo }
+                            alt="Niniwise journal"
+                        />
+                    </a>
                 </div>
                 <div className="footer__content">
                     <ul>
