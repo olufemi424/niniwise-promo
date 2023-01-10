@@ -1,24 +1,25 @@
 .footer {
     background-color: var(--background-color-dark);
-    margin-top: auto;
     padding-block: 32px;
+    margin-top: auto;
 
     .footer__container {
-        align-items: center;
-        display: flex;
-        height: 140px;
-        justify-content: space-around;
         margin: 0 auto;
         padding-inline: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        height: 140px;
 
         @media (min-width: 576px){
             max-width: 1200px;
         }
     }
 
-    &__aside {
-        color: var(--color-white);
-        font-size: 32px;
+    &__img {
+        width: 200px;
+        object-fit: cover;
+        border-radius: 8px;
     }
 
     &__content {
@@ -27,8 +28,8 @@
 
         a {
             color: var(--color-white);
-            line-height: 1.5;
             text-decoration: none;
+            line-height: 1.5;
 
             &:hover {
                 color: #FED700;
@@ -37,14 +38,9 @@
 
         ul {
             border-left: 1px solid #FED700;
+            padding-left: 20px;
             list-style: none;
             margin: 0;
-            padding-left: 20px;
         }
-    }
-
-    &__legal {
-        font-size: 14px;
-        margin-block: 16px;
     }
 }
