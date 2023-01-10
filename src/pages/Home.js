@@ -1,11 +1,11 @@
-import HomeHero from "../components/HeroSection";
-import Benefits from "../components/Benefits";
-import niniwiseImage1 from "../assets/Screen Shot 2023-01-05 at 11.56.24 PM.png";
+import niniwiseImage1 from "../assets/app-home.png";
 import backgroundImage from "../assets/home-hero.jpeg";
 import results from "../assets/results.png";
 import userImage from "../assets/profileImage.jpg";
-import Footer from "../components/Footer";
 import ButtonCta from "../components/ButtonCta";
+import HomeHero from "../components/HeroSection";
+import Benefits from "../components/Benefits";
+import Footer from "../components/Footer";
 
 const Home = () => {
     const homeHeroData = {

@@ -1,8 +1,8 @@
+import backgroundImage from "../assets/blog.jpeg";
 import HomeHero from "../components/HeroSection";
 import useFetch from "../useFetch";
 import BlogList from "../components/BlogList";
 import Footer from "../components/Footer";
-import backgroundImage from "../assets/blog.jpeg";
 import ButtonCta from "../components/ButtonCta";
 
 const Blog = () => {

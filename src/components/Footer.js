@@ -1,4 +1,5 @@
 import { NavLink } from "react-router-dom";
+import logo from "../assets/logo/logo-yellow.png"
 const Footer = () => {
     return (
         <footer className="footer">
@@ -12,15 +13,19 @@ const Footer = () => {
                             <NavLink to="/features">Features</NavLink>
                         </li>
                         <li>
+                            <NavLink to="/price-action">Price Action Rules</NavLink>
+                        </li>
+                        <li>
                             <NavLink to="/blog">Blog</NavLink>
                         </li>
                         <li>
                             <NavLink to="/pricing">Pricing</NavLink>
                         </li>
-                        <li>
-                            <NavLink to="/price-action">Price Action Rules</NavLink>
-                        </li>
                     </ul>
+
+                    <div className="footer__legal">
+                        &copy; 2017 by trillo. All rights reserved.
+                    </div>
                 </div>
             </div>
         </footer>
