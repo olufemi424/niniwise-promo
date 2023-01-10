@@ -17,6 +17,11 @@
             @media (min-width: 576px){
                 max-width: 1200px;
             }
+
+            @media only screen and (max-width: $bp-medium) {
+                flex-direction: column;
+                flex-flow: column-reverse;
+            }
         }
 
         &__page-title {
@@ -44,6 +49,11 @@
             color: var(--color-white);
             flex: 1;
             padding-inline-end: 32px;
+
+            @media only screen and (max-width: $bp-medium) {
+                text-align: center;
+                margin-block: 24px;
+            }
 
             &-title {
                 font-size: 42px;
@@ -93,6 +103,11 @@
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
             grid-gap: 24px;
+
+            @media only screen and (max-width: $bp-small) {
+                grid-template-columns: 1fr 1fr;
+                grid-gap: 16px;
+            }
         }
 
         &__list-item {
