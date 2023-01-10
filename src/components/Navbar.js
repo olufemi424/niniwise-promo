@@ -1,3 +1,4 @@
+import logo from "../assets/logo/logo-yellow.png"
 import { NavLink } from "react-router-dom";
 import ButtonCta from "./ButtonCta";
 
@@ -7,7 +8,9 @@ const Navbar = () => {
       <div className="container">
         <div className="header__inner">
           <div className="header__aside">
-            <a href="/">Niniwise Logo</a>
+            <a href="/">
+              <img src={logo} className="header__logo" alt="Niniwise Logo" />
+            </a>
           </div>
           <div className="header__content">
             <nav className="header__nav">
@@ -16,13 +19,13 @@ const Navbar = () => {
                   <NavLink to="/features">Features</NavLink>
                 </li>
                 <li>
+                  <NavLink to="/price-action">Price Action Rules</NavLink>
+                </li>
+                <li>
                   <NavLink to="/blog">Blog</NavLink>
                 </li>
                 <li>
                   <NavLink to="/pricing">Pricing</NavLink>
-                </li>
-                <li>
-                  <NavLink to="/price-action">Price Action Rules</NavLink>
                 </li>
               </ul>
             </nav>
