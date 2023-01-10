@@ -8,8 +8,8 @@
         padding-inline: 16px;
         display: flex;
         align-items: center;
-        justify-content: space-around;
-        height: 140px;
+        justify-content: space-between;
+        height: fit-content;
 
         @media (min-width: 576px){
             max-width: 1200px;
@@ -22,14 +22,10 @@
         border-radius: 8px;
     }
 
-    &__aside {
-        color: var(--color-white);
-        font-size: 32px;
-    }
-
     &__content {
         display: flex;
         flex-direction: column;
+        padding-block: 16px;
 
         a {
             color: var(--color-white);
@@ -47,5 +43,10 @@
             list-style: none;
             margin: 0;
         }
+    }
+
+    &__legal {
+        font-size: 14px;
+        margin-block-start: 24px;
     }
 }
