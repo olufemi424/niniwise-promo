@@ -1,4 +1,4 @@
-import logo from "../assets/logo/logo-yellow.png"
+import logo from "../assets/logo/logo-1-landscape.png"
 import { NavLink } from "react-router-dom";
 import ButtonCta from "./ButtonCta";
 

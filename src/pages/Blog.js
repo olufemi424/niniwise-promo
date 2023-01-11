@@ -1,4 +1,4 @@
-import backgroundImage from "../assets/blog.jpeg";
+import backgroundImage from "../assets/backgrounds/blog.jpeg";
 import HomeHero from "../components/HeroSection";
 import useFetch from "../useFetch";
 import BlogList from "../components/BlogList";

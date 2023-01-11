@@ -1,5 +1,5 @@
 import niniwiseImage1 from "../assets/app-home.png";
-import backgroundImage from "../assets/timing-stock-market.jpeg";
+import backgroundImage from "../assets/backgrounds/timing-stock-market.jpeg";
 import HomeHero from "../components/HeroSection";
 import ButtonCta from "../components/ButtonCta";
 import Footer from "../components/Footer";
