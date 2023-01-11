@@ -1,5 +1,5 @@
 import HomeHero from "../components/HeroSection";
-import backgroundImage from "../assets/pricing.jpeg";
+import backgroundImage from "../assets/backgrounds/pricing.jpeg";
 import Footer from "../components/Footer";
 import ButtonCta from "../components/ButtonCta";
 

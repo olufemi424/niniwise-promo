@@ -1,4 +1,4 @@
-import backgroundImage from "../assets/pricing.jpeg";
+import backgroundImage from "../assets/backgrounds/pricing.jpeg";
 import downtrend from "../assets/price-action/downtrend.png";
 import uptrend from "../assets/price-action/uptrend.png";
 import balanced from "../assets/price-action/balanced.png";

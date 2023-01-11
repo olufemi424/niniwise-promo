@@ -13,7 +13,7 @@ const ReviewCard = () => {
                     <img src={ userImage } alt="Testimonail result" className="review__photo"/>
                     <div className="review__user-box">
                         <p className="review__user-name">Olufemi Afolabi</p>
-                        <p className="review__user-date">Oct 23rd, 2022</p>
+                        <p className="review__user-date">Dec 23rd, 2022</p>
                     </div>
                 </figcaption>
             </div>
