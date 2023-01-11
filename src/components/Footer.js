@@ -30,7 +30,7 @@ const Footer = () => {
                     </ul>
 
                     <div className="footer__legal">
-                        &copy; 2017 by trillo. All rights reserved.
+                        &copy; 2017 by Niniwise. All rights reserved. Created by Olufemi Afolabi
                     </div>
                 </div>
             </div>
