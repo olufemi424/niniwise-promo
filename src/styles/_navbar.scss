@@ -7,8 +7,8 @@
     z-index: 999;
 
     &__logo {
-        width: 100px;
-        height: 100px;
+        width: 200px;
+        height: 80px;
     }
 
     ul {
@@ -35,6 +35,7 @@
         align-items: center;
         display: flex;
         justify-content: space-between;
+        padding-block: 16px;
     }
 
     &__aside {

@@ -1,5 +1,5 @@
 import niniwiseImage1 from "../assets/app-home.png";
-import backgroundImage from "../assets/home-hero.jpeg";
+import backgroundImage from "../assets/backgrounds/home-hero.jpeg";
 import ButtonCta from "../components/ButtonCta";
 import HomeHero from "../components/HeroSection";
 import Benefits from "../components/Benefits";
