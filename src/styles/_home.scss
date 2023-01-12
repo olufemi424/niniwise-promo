@@ -117,12 +117,14 @@
             padding: 16px;
 
             .icon {
-                background-color: var(--background-color-dark);
-                border-radius: 8px;
-                border: 2px solid #FED700;
-                height: 20px;
                 margin-right: 16px;
-                width: 60px;
+                max-width: 39px;
+                max-height: 39px;
+
+                img {
+                    width: 100%;
+                    object-fit: contain;
+                }
             }
 
             .details {
