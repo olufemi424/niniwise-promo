@@ -1,4 +1,5 @@
-import niniwiseImage1 from "../assets/app-home.png";
+import niniwiseImage from "../assets/app-home.png";
+import niniwiseImage1 from "../assets/app-home1.png";
 import backgroundImage from "../assets/backgrounds/timing-stock-market.jpeg";
 import HomeHero from "../components/HeroSection";
 import ButtonCta from "../components/ButtonCta";
@@ -41,7 +42,7 @@ const Features = () => {
                 <div className="features__description-box">
                     <img
                         className="features__image"
-                        src={ niniwiseImage1 }
+                        src={ niniwiseImage }
                         alt="Niniwise journal"
                     />
                 </div>
@@ -57,7 +58,7 @@ const Features = () => {
                 <div className="features__description-box">
                     <img
                         className="features__image"
-                        src={ niniwiseImage1 }
+                        src={ niniwiseImage }
                         alt="Niniwise journal"
                     />
                 </div>
@@ -67,7 +68,7 @@ const Features = () => {
                 <div className="features__description-box">
                     <img
                         className="features__image"
-                        src={ niniwiseImage1 }
+                        src={ niniwiseImage }
                         alt="Niniwise journal"
                     />
                 </div>

@@ -1,4 +1,5 @@
-import niniwiseImage1 from "../assets/app-home.png";
+// import niniwiseImage1 from "../assets/app-home.png";
+import niniwiseImage1 from "../assets/app-home1.png";
 import backgroundImage from "../assets/backgrounds/home-hero.jpeg";
 import ButtonCta from "../components/ButtonCta";
 import HomeHero from "../components/HeroSection";
