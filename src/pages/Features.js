@@ -7,7 +7,7 @@ import Footer from "../components/Footer";
 
 const Features = () => {
     return (
-        <div className="features">
+        <main className="features">
             <HomeHero pageTitle={'Features'} background={backgroundImage}></HomeHero>
 
             <div className="features__container">
@@ -76,9 +76,11 @@ const Features = () => {
                     <p>A way to set and track goals for the trader's performance</p>
                 </div>
             </div>
-            <ButtonCta></ButtonCta>
+            <div className="cta-section">
+                <ButtonCta/>
+            </div>
             <Footer></Footer>
-        </div>
+        </main>
     );
 }
 

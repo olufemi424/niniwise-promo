@@ -5,11 +5,13 @@ import ButtonCta from "../components/ButtonCta";
 
 const Pricing = () => {
     return (
-        <div className="pricing">
+        <main className="pricing">
             <HomeHero pageTitle={'Free for first 20 users'} background={backgroundImage}></HomeHero>
-            <ButtonCta></ButtonCta>
+            <div className="cta-section">
+                <ButtonCta/>
+            </div>
             <Footer></Footer>
-        </div>
+        </main>
     );
 }
 

@@ -1,106 +1,129 @@
 .header {
-    background-color: var(--background-color-dark);
-    left: 0;
-    max-height: 118px;
-    position: fixed;
-    right: 0;
-    z-index: 999;
+    background-color: var(--color-primary-dark);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 9.6rem; // For sticky header
+    padding: 0 4.8rem;
+    position: relative;
+
+    @media only screen and (max-width: $bp-smallest) {
+        padding: 0 2.4rem;
+    }
 
     &__logo {
-        width: 200px;
-        height: 80px;
+        height: 6rem;
     }
 
-    ul {
+    .main-nav-list {
         list-style: none;
-        margin: 0;
-        padding: 0;
+        display: flex;
+        gap: 4.8rem;
+        align-items: center;
     }
 
-    a {
+    .main-nav-link a,
+    .main-nav-link a:link,
+    .main-nav-link a:visited {
+        display: inline-block;
         text-decoration: none;
-    }
+        color: var(--color-white);
+        font-weight: 500;
+        font-size: 1.8rem;
+        transition: all 0.2s;
+        padding-block: 8px;
 
-    .container {
-        margin: auto;
-        // padding: 16px;
-        width: 100%;
+        &:hover {
+            color:  var(--color-primary-blend-dark);
+        }
 
-        @media (min-width: 576px){
-            max-width: 1200px;
+        &.active {
+            border-bottom: 2px solid var(--color-primary-blend);
+            color: var(--color-primary-blend);
+            padding-bottom: 8px;
         }
     }
 
-    &__inner {
-        align-items: center;
-        display: flex;
-        justify-content: space-between;
-        padding-block: 16px;
+    .btn-mobile-nav {
+        background: none;
+        border: none;
+        cursor: pointer;
+        display: none;
+        z-index: 100;
     }
 
-    &__aside {
-        a {
-            color: var(--color-white);
-            font-size: 32px;
+    .icon-mobile-nav {
+        color: var(--color-white);
+        height: 3.2rem;
+        width: 3.2rem;
+
+        &.icon-times {
+            display: none;
         }
     }
 
-    &__content {
-        align-items: center;
-        display: flex;
-        flex: 1;
-        justify-content: space-between;
-        margin-inline-start: 60px;
-    }
+    @media only screen and (max-width: $bp-medium) {
 
-    &__nav {
-        width: 60%;
-        // deal with the responsive later
-        // @media only screen and (max-width: 707px) {
-        //     ul {
-        //         // background-color: red;
-        //         flex-direction: column;
-        //         height: 100px;
-        //     }
-        // }
-    }
-    &__nav-access {
-        width: 30%;
-    }
+        .btn-mobile-nav {
+            display: block;
+        }
 
-    &__nav, &__nav-access {
-        & > ul {
-            align-items: center;
+        .main-nav {
+            background-color: rgba(255, 255, 255, 0.97);
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            // height: 100vh;
+            height: 75vh;
+            z-index: 100;
+            transform: translateX(100%);
+
             display: flex;
-            justify-content: space-around;
-            margin-bottom: 0;
-            position: relative;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.5s ease-in;
 
-            .active {
-                border-bottom: 2px solid #FED700;
-                color: #FED700;
-                margin-top: -3px;
-                padding-bottom: 8px;
+            // display: none; allows no animations
+            // 1.) Hide it visually
+            opacity: 0;
+
+            /* 2) Make it unaccessible to mouse and keyboard */
+            pointer-events: none;
+
+            /* 3) Hide it from screen readers */
+            visibility: hidden;
+        }
+
+        &.nav-open {
+            .main-nav {
+                opacity: 1;
+                pointer-events: auto;
+                visibility: visible;
+                transform: translateX(0);
+
+            }
+
+            .icon-mobile-nav.icon-times {
+                display: block;
+                color: var(--color-primary);
+            }
+
+            .icon-mobile-nav.icon-bars {
+                display: none;
             }
         }
 
-        a {
-            color: var(--color-white);
-            font-size: 16px;
-            font-weight: 500;
-
-            &:hover {
-                color: #FED700;
-            }
+        .main-nav-link a,
+        .main-nav-link a:link,
+        .main-nav-link a:visited {
+            color: var(--color-primary);
+            font-size: 3rem;
         }
 
-        .btn {
-            background: #FED700;;
-            border-radius: 4px;
-            border: 1px solid #384062;
-            color: #181e3a;
-            min-width: 122px;
-            padding: 13px 10px;
+        .main-nav-list {
+            flex-direction: column;
+            gap: 4.8rem;
         }
     }
 }

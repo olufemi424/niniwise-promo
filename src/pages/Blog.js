@@ -9,14 +9,16 @@ const Blog = () => {
     const {data: blogs, isPending, error} = useFetch('http://localhost:8001/blogs');
 
     return (
-        <div className="blog">
+        <main className="blog">
             <HomeHero pageTitle={'Blog'} background={backgroundImage}></HomeHero>
             { error && <div>{ error }</div> }
             { isPending && <div>Loading...</div> }
             { blogs && <BlogList blogs={blogs} /> }
-            <ButtonCta></ButtonCta>
+            <div className="cta-section">
+                <ButtonCta/>
+            </div>
             <Footer></Footer>
-        </div>
+        </main>
 
     );
 }
