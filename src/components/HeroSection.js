@@ -7,18 +7,22 @@ const HomeHero = ({ background, title, description, getStartedButtonisEnabled, p
   return (
     <div className="home-hero" style={heroStyle}>
         <div className="container">
-            { pageTitle && <h2 className="home-hero__page-title">
+            { pageTitle &&
+                <h2 className="home-hero__page-title">
                     { pageTitle }
-            </h2>}
-            { getStartedButtonisEnabled && <ButtonCta></ButtonCta> }
-            { title && description && <div className="home-hero__info">
-                 <h2 className="home-hero__info-title">
-                    { title }
                 </h2>
-                <p className="home-hero__info-text">
-                    { description }
-                </p>
-            </div> }
+            }
+            { title && description &&
+                <div className="home-hero__info">
+                    <h2 className="home-hero__info-title">
+                        { title }
+                    </h2>
+                    <p className="home-hero__info-text">
+                        { description }
+                    </p>
+                    { getStartedButtonisEnabled && <ButtonCta></ButtonCta> }
+                </div>
+            }
         </div>
     </div>
   );

@@ -22,23 +22,11 @@
         flex-direction: column;
     }
 
-    // @media only screen and (max-width: $bp-medium) {
-    //     background-color: red;
-    // }
-
-    // @media only screen and (max-width: $bp-small) {
-    //     background-color: yellow;
-    // }
-
-    // @media only screen and (max-width: $bp-iphoneX) {
-    //     background-color: green;
-    // }
-
     &__box {
-        margin-inline-end: 24px;
+        margin-inline-end: 2.4rem;
 
         @media only screen and (max-width: $bp-small) {
-            margin-block-end: 24px;
+            margin-block-end: 2.4rem;
         }
     }
 
@@ -54,6 +42,7 @@
 
     &__text {
         line-height: 1.5;
+        font-size: 1.6rem;
         margin-bottom: 2rem;
         position: relative;
         z-index: 10;
@@ -66,9 +55,8 @@
 
     &__photo {
         border-radius: 50%;
-        height: 4.5rem;
+        height: 6.4rem;
         margin-right: 1.5rem;
-        width: 4.5rem;
     }
 
     &__user-box {
@@ -76,15 +64,15 @@
     }
 
     &__user-name {
-        font-size: 1.1rem;
+        font-size: 1.8rem;
         font-weight: 600;
-        margin-bottom: .4rem;
+        margin-bottom: .8rem;
         text-transform: uppercase;
     }
 
     &__user-date {
         color: var(--color-grey-dark-3);
-        font-size: 1rem;
+        font-size: 1.4rem;
     }
 
     &::before {
@@ -101,10 +89,8 @@
 
     &__img {
         border-radius: 8px;
-        border: 1px solid var(--background-color-dark);
-        max-height: 14.6rem;
-        max-width: 50.5rem;
-        min-width: 30.5rem;
+        border: 1px solid var(--color-primary-dark);
+        height: 20.5rem;
         object-fit: contain;
 
         @media only screen and (max-width: $bp-medium) {

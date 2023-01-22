@@ -1,47 +1,39 @@
 import logo from "../assets/logo/logo-1-landscape.png"
+import { useRef, useEffect } from "react";
+import { useLocation } from 'react-router-dom';
 import { NavLink } from "react-router-dom";
+import { FaBars, FaTimes } from "react-icons/fa";
 import ButtonCta from "./ButtonCta";
 
 const Navbar = () => {
+  const location = useLocation();
+  const navRef = useRef();
+  const showNavbar = () => {
+    navRef.current.classList.toggle("nav-open");
+  }
+  useEffect(() =>{
+    showNavbar()
+  }, [location])
   return (
-    <header className="header">
-      <div className="container">
-        <div className="header__inner">
-          <div className="header__aside">
-            <a href="/">
-              <img src={logo} className="header__logo" alt="Niniwise Logo" />
-            </a>
-          </div>
-          <div className="header__content">
-            <nav className="header__nav">
-              <ul>
-                <li>
-                  <NavLink to="/features">Features</NavLink>
-                </li>
-                <li>
-                  <NavLink to="/price-action">Price Action Rules</NavLink>
-                </li>
-                <li>
-                  <NavLink to="/blog">Blog</NavLink>
-                </li>
-                <li>
-                  <NavLink to="/pricing">Pricing</NavLink>
-                </li>
-              </ul>
-            </nav>
-            <nav className="header__nav-access">
-              <ul>
-                <li>
-                  <NavLink to="/login">Login</NavLink>
-                </li>
-                <li>
-                  <ButtonCta size={'sm'}></ButtonCta>
-                </li>
-              </ul>
-            </nav>
-          </div>
-        </div>
-      </div>
+    <header ref={navRef} className="header">
+      <a href="/">
+        <img src={logo} className="header__logo" alt="Niniwise Logo" />
+      </a>
+      <nav className="main-nav">
+        <ul className="main-nav-list">
+          <li className="main-nav-link"><NavLink to="/features">Features</NavLink></li>
+          <li className="main-nav-link"><NavLink to="/price-action">Price Action Rules</NavLink></li>
+          <li className="main-nav-link"><NavLink to="/blog">Blog</NavLink></li>
+          <li className="main-nav-link"><NavLink to="/pricing">Pricing</NavLink></li>
+          <li className="main-nav-link"><NavLink to="/login">Login</NavLink></li>
+          <li className="main-nav-link"><ButtonCta text={'Try for free'} size={'sm'}></ButtonCta></li>
+        </ul>
+      </nav>
+
+      <button className="btn-mobile-nav" onClick={showNavbar}>
+        <FaBars className="icon-mobile-nav icon-bars" />
+        <FaTimes className="icon-mobile-nav icon-times" />
+      </button>
     </header>
   );
 }

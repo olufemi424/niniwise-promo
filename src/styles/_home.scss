@@ -3,7 +3,7 @@
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        height: 600px;
+        height: 60rem;
         position: relative;
 
         .container {
@@ -12,7 +12,8 @@
             height: 100%;
             justify-content: center;
             margin: auto;
-            padding-inline: 16px;
+            padding-inline: 1.6rem;
+            width: 100%;
 
             @media (min-width: 576px){
                 max-width: 1200px;
@@ -26,42 +27,30 @@
 
         &__page-title {
             color: var(--color-white);
-            font-size: 60px;
+            font-size: 6.2rem;
             text-align: center;
-        }
-
-        &__cta {
-            flex: 1;
-            text-align: center;
-
-            .btn {
-                background: #FED700;;
-                border-radius: 4px;
-                border: 1px solid #384062;
-                color: #181e3a;
-                font-size: 24px;
-                min-width: 122px;
-                padding: 18px 40px;
-            }
         }
 
         &__info {
             color: var(--color-white);
-            flex: 1;
-            padding-inline-end: 32px;
 
             @media only screen and (max-width: $bp-medium) {
-                text-align: center;
-                margin-block: 24px;
+                // text-align: center;
+                // margin: 4.8rem;
+            }
+
+            @media only screen and (max-width: $bp-small) {
+                // margin: 2.4rem;
             }
 
             &-title {
-                font-size: 42px;
-                margin-block: 32px;
+                font-size: 4.4rem;
+                line-height: 1.05;
+                margin-block: 3.2rem;
             }
             &-text {
-                font-size: 18px;
-                line-height: 1.7;
+                font-size: 2rem;
+                line-height: 1.6;
             }
         }
     }
@@ -69,57 +58,64 @@
     &__img-container {
         display: flex;
         justify-content: center;
-        margin: 80px auto;
-        padding-inline: 16px;
-
-        @media (min-width: 576px){
-            max-width: 1200px;
-        }
+        margin: 8rem auto;
+        padding-inline: 1.6rem;
     }
 
     &__img-image {
-        border-radius: 18px;
-        border: 1px solid var(--background-color-dark);
-        min-width: 500px;
+        border-radius: 1.8rem;
+        border: 1px solid var(--color-primary-dark);
+        min-width: 50rem;
         object-fit: contain;
-        width: 900px;
+        width: 116rem;
+
+        @media only screen and (max-width: $bp-smallest) {
+            min-width: 35rem;
+        }
     }
 
     &-benefit {
         margin: 0 auto;
-        padding-inline: 16px;
+        padding-inline: 1.6rem;
 
         @media (min-width: 576px){
             max-width: 1200px;
         }
 
         &__title {
-            font-size: 42px;
-            margin-block-end: 32px;
+            font-size: 4.4rem;
+            margin-block-end: 3.2rem;
             text-align: center;
+            color: var(--color-primary);
         }
 
         &__list {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
-            grid-gap: 24px;
+            grid-gap: 2.4rem;
 
             @media only screen and (max-width: $bp-small) {
                 grid-template-columns: 1fr 1fr;
-                grid-gap: 16px;
+                grid-gap: 1.6rem;
+            }
+
+            @media only screen and (max-width: $bp-smallest) {
+                grid-template-columns: 1fr;
+                grid-gap: 1rem;
             }
         }
 
         &__list-item {
-            border-radius: 8px;
-            box-shadow: 0 4px 26px 5px rgba(#000, 0.10);
+            border-radius: 0.8rem;
+            box-shadow: var(--shadow-light);
+            font-size: 1.6rem;
             display: flex;
-            padding: 16px;
+            padding: 1.6rem;
 
             .icon {
-                margin-right: 16px;
-                max-width: 39px;
-                max-height: 39px;
+                margin-right: 1.6rem;
+                max-width: 3.9rem;
+                max-height: 3.9rem;
 
                 img {
                     width: 100%;
@@ -130,8 +126,8 @@
             .details {
                 h5 {
                     color: var(--color-grey-dark-1);
-                    font-size: 18px;
-                    margin-block-end: 16px;
+                    font-size: 1.8rem;
+                    margin-block-end: 1.6rem;
                 }
 
                 p {

@@ -8,7 +8,7 @@ import ButtonCta from "../components/ButtonCta";
 
 const PriceActionRules = () => {
     return (
-        <div className="price-action">
+        <main className="price-action">
             <HomeHero pageTitle={'Price Action Rules'} background={backgroundImage}/>
             <div className="price-action__container">
                 <div className="price-action__type">
@@ -38,9 +38,11 @@ const PriceActionRules = () => {
                     </div>
                 </div>
             </div>
-            <ButtonCta></ButtonCta>
+            <div className="cta-section">
+                <ButtonCta/>
+            </div>
             <Footer></Footer>
-        </div>
+        </main>
     );
 }
 
