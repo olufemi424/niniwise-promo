@@ -9,20 +9,26 @@
 
     .btn {
         background: var(--color-primary-blend);
-        border-radius: 0.4rem;
+        border-radius: 0.9rem;
         border: none;
         box-shadow: var(--shadow-light);
         color: #181e3a;
         cursor: pointer;
-        font-size: 2.4rem;
-        min-width: 12.2rem;
-        padding: 1.8rem 6rem;
+        font-size: 2rem;
         font-weight: 600;
+        min-width: 12.2rem;
+        padding: 1.8rem 3rem;
 
         &:hover {
             background-color: var(--color-primary-blend-dark);
         }
+
+        &:focus {
+            outline: none;
+            box-shadow: 0 0 0 0.8rem rgba(224, 221, 2, 0.68);
+        }
     }
+
 }
 
 
