@@ -12,6 +12,7 @@ const Navbar = () => {
     navRef.current.classList.toggle("nav-open");
   }
   useEffect(() =>{
+    if(!navRef.current.classList.contains("nav-open")) return;
     showNavbar()
   }, [location])
   return (
