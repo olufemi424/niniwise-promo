@@ -14,7 +14,7 @@ const Home = () => {
         description: "A trading journal is a useful tool for traders to track their progress, identify patterns and mistakes, and improve their strategies. It can help traders overcome biases and emotions and improve their performance in the market."
     }
     return (
-        <div className="home">
+        <main className="home">
             <HomeHero
                 background={homeHeroData.backgroundImage}
                 title={homeHeroData.title}
@@ -29,12 +29,14 @@ const Home = () => {
                 />
             </div>
             <Benefits/>
-            <ButtonCta/>
+            <div className="cta-section">
+                <ButtonCta/>
+            </div>
             <div className="user-reviews">
                 <ReviewCard/>
             </div>
             <Footer></Footer>
-        </div>
+        </main>
     );
 }
 

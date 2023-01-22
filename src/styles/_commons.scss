@@ -1,23 +1,27 @@
 .app-container {
-    padding-block-start: 105px;
+    // padding-block-start: 105px;
     width: 100%;
 }
 
 .button__cta {
     flex: 1;
-    margin-block: 80px;
-    text-align: center;
+    margin-block: 8rem;
 
     .btn {
-        background: #FED700;
-        border-radius: 4px;
+        background: var(--color-primary-blend);
+        border-radius: 0.4rem;
         border: none;
-        box-shadow: 0 4px 26px 5px rgba(#000, 0.10);
+        box-shadow: var(--shadow-light);
         color: #181e3a;
         cursor: pointer;
-        font-size: 24px;
-        min-width: 122px;
-        padding: 18px 60px;
+        font-size: 2.4rem;
+        min-width: 12.2rem;
+        padding: 1.8rem 6rem;
+        font-weight: 600;
+
+        &:hover {
+            background-color: var(--color-primary-blend-dark);
+        }
     }
 }
 
@@ -28,10 +32,18 @@
     text-align: center;
 
     .btn {
-        background: #FED700;
-        font-size: 16px;
+        background: var(--color-primary-blend);
+        font-size: 1.6rem;
         font-weight: 500;
-        min-width: 122px;
-        padding: 13px 10px;
+        min-width: 12.2rem;
+        padding: 1.3rem 1rem;
+
+        &:hover {
+            background-color:  var(--color-primary-blend-dark);
+        }
     }
+}
+
+.cta-section {
+    text-align: center;
 }
