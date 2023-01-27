@@ -1,6 +1,7 @@
 .user-reviews {
     display: flex;
     margin: 0 auto;
+    margin-block-end: 6.4rem;
 
     @media (min-width: 576px){
         max-width: 1200px;
@@ -41,7 +42,7 @@
     }
 
     &__text {
-        line-height: 1.5;
+        line-height: 1.6;
         font-size: 1.6rem;
         margin-bottom: 2rem;
         position: relative;
