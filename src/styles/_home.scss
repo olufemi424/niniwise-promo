@@ -3,7 +3,7 @@
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        height: 60rem;
+        height: 80rem;
         position: relative;
 
         .container {
@@ -84,7 +84,7 @@
 
         &__title {
             font-size: 4.4rem;
-            margin-block-end: 3.2rem;
+            margin-block-end: 6.4rem;
             text-align: center;
             color: var(--color-primary);
         }
@@ -131,7 +131,7 @@
                 }
 
                 p {
-                    line-height: 1.5;
+                    line-height: 1.6;
                 }
             }
         }
