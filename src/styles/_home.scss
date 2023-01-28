@@ -1,4 +1,90 @@
 .home {
+    &-landing {
+        height: 80rem;
+        position: relative;
+
+        .container {
+            align-items: center;
+            display: flex;
+            height: 100%;
+            justify-content: center;
+            margin: auto;
+            padding-inline: 1.6rem;
+            width: 100%;
+
+            @media (min-width: 576px){
+                max-width: 1200px;
+            }
+        }
+
+        &__info {
+            color: var(--color-primary);
+            // flex: 1;
+            position: relative;
+            width: 50%;
+
+            @media only screen and (max-width: $bp-medium) {
+                // text-align: center;
+                // margin: 4.8rem;
+            }
+
+            @media only screen and (max-width: $bp-small) {
+                // margin: 2.4rem;
+            }
+
+            &-title {
+                font-size: 4.4rem;
+                line-height: 1.05;
+                margin-block: 3.2rem;
+            }
+
+            &-text {
+                font-size: 2rem;
+                line-height: 1.6;
+            }
+
+            @media only screen and (max-width: $bp-medium) {
+                width: 100%;
+            }
+
+            &:nth-child(2) {
+                @media only screen and (max-width: $bp-medium) {
+                    display: none;
+                }
+            }
+        }
+
+        &__img-container {
+            position: absolute;
+            top: -22rem;
+            left: 4rem;
+        }
+
+        &-img {
+            height: 40rem;
+            border-radius: 1.8rem;
+            object-fit: contain;
+            position: absolute;
+            box-shadow: var(--shadow-light);
+
+            &.image-1 {
+                top: 3.6rem;
+                left: 4rem;
+            }
+
+            &.image-2 {
+                top: 1.8rem;
+                left: 2rem;
+            }
+
+            &.image-3 {
+                top: 0;
+                left: 0;
+            }
+        }
+    }
+
+
     &-hero {
         background-position: center;
         background-repeat: no-repeat;
