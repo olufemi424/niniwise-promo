@@ -8,9 +8,12 @@ import ButtonCta from "./ButtonCta";
 const Navbar = () => {
   const location = useLocation();
   const navRef = useRef();
+  const ctaRef = useRef();
   const showNavbar = () => {
     navRef.current.classList.toggle("nav-open");
+    ctaRef.current.classList.toggle("sm");
   }
+
   useEffect(() =>{
     if(!navRef.current.classList.contains("nav-open")) return;
     showNavbar()
@@ -27,7 +30,7 @@ const Navbar = () => {
           <li className="main-nav-link"><NavLink to="/blog">Blog</NavLink></li>
           <li className="main-nav-link"><NavLink to="/pricing">Pricing</NavLink></li>
           <li className="main-nav-link"><NavLink to="/login">Login</NavLink></li>
-          <li className="main-nav-link"><ButtonCta text={'Try for free'} size={'sm'}></ButtonCta></li>
+          <li className="main-nav-link"><ButtonCta text={'Try for free'} refCta={ctaRef} size={'sm'}></ButtonCta></li>
         </ul>
       </nav>
 
