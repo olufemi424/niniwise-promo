@@ -1,19 +1,28 @@
-// import niniwiseImage1 from "../assets/app-home.png";
+import backgroundImage from "../assets/backgrounds/home-hero.jpeg";
 import niniwiseImage1 from "../assets/app-home1.png";
+import HomeHero from "../components/HeroSection";
 import ButtonCta from "../components/ButtonCta";
 import Benefits from "../components/Benefits";
 import Footer from "../components/Footer";
 import ReviewCard from "../components/ReviewCard";
 
 const Home = () => {
+    const homeHeroData = {
+        backgroundImage: backgroundImage,
+        title: "Journal  your way to consistent profitability -",
+        description: "A trading journal is a useful tool for traders to track their progress, identify patterns and mistakes, and improve their strategies. It can help traders overcome biases and emotions and improve their performance in the market."
+    }
     return (
         <main className="home">
-            {/* <HomeHero
-                background={homeHeroData.backgroundImage}
-                title={homeHeroData.title}
-                description={homeHeroData.description}
-                getStartedButtonisEnabled={true}
-            /> */}
+            <div className="home-hero-mobile">
+                <HomeHero
+                    className="home-hero-mobile"
+                    background={homeHeroData.backgroundImage}
+                    title={homeHeroData.title}
+                    description={homeHeroData.description}
+                    getStartedButtonisEnabled={true}
+                />
+            </div>
             <section className="home-landing">
                 <div className="container">
                     <div className="home-landing__info">
