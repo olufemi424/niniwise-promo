@@ -1,4 +1,5 @@
 import backgroundImage from "../assets/backgrounds/home-hero.jpeg";
+import dailystatsscreen from "../assets/daily-stats-screen.png";
 import niniwiseImage1 from "../assets/app-home1.png";
 import HomeHero from "../components/HeroSection";
 import ButtonCta from "../components/ButtonCta";
@@ -58,7 +59,7 @@ const Home = () => {
             <section className="home__img-container">
                 <img
                     className="home__img-image"
-                    src={ niniwiseImage1 }
+                    src={ dailystatsscreen }
                     alt="Niniwise journal"
                 />
             </section>
