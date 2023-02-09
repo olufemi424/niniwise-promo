@@ -1,5 +1,6 @@
 import niniwiseImage from "../assets/app-home.png";
 import niniwiseImage1 from "../assets/app-home1.png";
+import dailyStatsTrades from "../assets/daily-stats-screen.png";
 import backgroundImage from "../assets/backgrounds/timing-stock-market.jpeg";
 import HomeHero from "../components/HeroSection";
 import ButtonCta from "../components/ButtonCta";
@@ -42,18 +43,18 @@ const Features = () => {
                 <div className="features__description-box">
                     <img
                         className="features__image"
-                        src={ niniwiseImage }
+                        src={ dailyStatsTrades }
                         alt="Niniwise journal"
                     />
                 </div>
                 <div className="features__description-box">
-                    <p>Charts or graphs to visualize trade data and track progress</p>
+                    <p>A way to categorize trades by type (e.g. long, short, day trade, swing trade)</p>
                 </div>
             </div>
 
             <div className="features__description">
                 <div className="features__description-box">
-                    <p>A way to categorize trades by type (e.g. long, short, day trade, swing trade)</p>
+                    <p>Charts or graphs to visualize trade data and track progress</p>
                 </div>
                 <div className="features__description-box">
                     <img

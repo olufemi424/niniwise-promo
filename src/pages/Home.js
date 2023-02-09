@@ -1,8 +1,8 @@
-// import niniwiseImage1 from "../assets/app-home.png";
-import niniwiseImage1 from "../assets/app-home1.png";
 import backgroundImage from "../assets/backgrounds/home-hero.jpeg";
-import ButtonCta from "../components/ButtonCta";
+import dailystatsscreen from "../assets/daily-stats-screen.png";
+import niniwiseImage1 from "../assets/app-home1.png";
 import HomeHero from "../components/HeroSection";
+import ButtonCta from "../components/ButtonCta";
 import Benefits from "../components/Benefits";
 import Footer from "../components/Footer";
 import ReviewCard from "../components/ReviewCard";
@@ -15,26 +15,61 @@ const Home = () => {
     }
     return (
         <main className="home">
-            <HomeHero
-                background={homeHeroData.backgroundImage}
-                title={homeHeroData.title}
-                description={homeHeroData.description}
-                getStartedButtonisEnabled={true}
-            />
-            <div className="home__img-container">
+            <section className="home-hero-mobile">
+                <HomeHero
+                    className="home-hero-mobile"
+                    background={homeHeroData.backgroundImage}
+                    title={homeHeroData.title}
+                    description={homeHeroData.description}
+                    getStartedButtonisEnabled={true}
+                />
+            </section>
+            <section className="home-landing">
+                <div className="container">
+                    <div className="home-landing__info">
+                        <h2 className="home-landing__info-title">
+                            {homeHeroData.title}
+                        </h2>
+                        <p className="home-landing__info-text">
+                           {homeHeroData.description}
+                        </p>
+                         <ButtonCta />
+                    </div>
+                    <div className="home-landing__info">
+                        <div className="home-landing__img-container">
+                            <img
+                                className="home-landing-img image-1"
+                                src={ niniwiseImage1 }
+                                alt="Niniwise journal"
+                            />
+                            <img
+                                className="home-landing-img image-2"
+                                src={ niniwiseImage1 }
+                                alt="Niniwise journal"
+                            />
+                            <img
+                                className="home-landing-img image-3"
+                                src={ niniwiseImage1 }
+                                alt="Niniwise journal"
+                            />
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section className="home__img-container">
                 <img
                     className="home__img-image"
-                    src={ niniwiseImage1 }
+                    src={ dailystatsscreen }
                     alt="Niniwise journal"
                 />
-            </div>
+            </section>
             <Benefits/>
-            <div className="cta-section">
+            <section className="cta-section">
                 <ButtonCta/>
-            </div>
-            <div className="user-reviews">
+            </section>
+            <section className="user-reviews">
                 <ReviewCard/>
-            </div>
+            </section>
             <Footer></Footer>
         </main>
     );
