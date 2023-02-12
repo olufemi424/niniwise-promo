@@ -6,6 +6,7 @@ import ButtonCta from "../components/ButtonCta";
 import Benefits from "../components/Benefits";
 import Footer from "../components/Footer";
 import ReviewCard from "../components/ReviewCard";
+import LazyLoadedImage from "../components/LazyLoadedImage";
 
 const Home = () => {
     const homeHeroData = {
@@ -37,18 +38,18 @@ const Home = () => {
                     </div>
                     <div className="home-landing__info">
                         <div className="home-landing__img-container">
-                            <img
-                                className="home-landing-img image-1"
+                            <LazyLoadedImage
+                                imageClass="home-landing-img image-1"
                                 src={ niniwiseImage1 }
                                 alt="Niniwise journal"
                             />
-                            <img
-                                className="home-landing-img image-2"
+                            <LazyLoadedImage
+                                imageClass="home-landing-img image-2"
                                 src={ niniwiseImage1 }
                                 alt="Niniwise journal"
                             />
-                            <img
-                                className="home-landing-img image-3"
+                            <LazyLoadedImage
+                                imageClass="home-landing-img image-3"
                                 src={ niniwiseImage1 }
                                 alt="Niniwise journal"
                             />
@@ -57,8 +58,8 @@ const Home = () => {
                 </div>
             </section>
             <section className="home__img-container">
-                <img
-                    className="home__img-image"
+                <LazyLoadedImage
+                    imageClass="home__img-image"
                     src={ dailystatsscreen }
                     alt="Niniwise journal"
                 />

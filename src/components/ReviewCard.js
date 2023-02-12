@@ -1,6 +1,7 @@
 
 import results from "../assets/results.png";
 import userImage from "../assets/profileImage.jpg";
+import LazyLoadedImage from "./LazyLoadedImage";
 
 const ReviewCard = () => {
     return (
@@ -17,8 +18,8 @@ const ReviewCard = () => {
                     </div>
                 </figcaption>
             </div>
-            <img
-                className="review__img"
+            <LazyLoadedImage
+                imageClass="review__img"
                 src={ results }
                 alt="Niniwise journal"
             />
