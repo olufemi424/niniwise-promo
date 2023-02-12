@@ -5,13 +5,14 @@ import backgroundImage from "../assets/backgrounds/timing-stock-market.jpeg";
 import HomeHero from "../components/HeroSection";
 import ButtonCta from "../components/ButtonCta";
 import Footer from "../components/Footer";
+import LazyLoadedImage from "../components/LazyLoadedImage";
 
 const Features = () => {
     return (
         <main className="features">
             <HomeHero pageTitle={'Features'} background={backgroundImage}></HomeHero>
 
-            <div className="features__container">
+            <section className="features__container">
                 <div className="features__item">
                     <p>Record Trades</p>
                 </div>
@@ -24,15 +25,15 @@ const Features = () => {
                 <div className="features__item">
                     <p>Track Goals</p>
                 </div>
-            </div>
+            </section>
 
             <div className="features__description">
                 <div className="features__description-box">
                     <p>A place to record trades, including trade details such as the instrument traded, entry and exit prices, and any notes about the trade</p>
                 </div>
                 <div className="features__description-box">
-                    <img
-                        className="features__image"
+                    <LazyLoadedImage
+                        imageClass="features__image"
                         src={ niniwiseImage1 }
                         alt="Niniwise journal"
                     />
@@ -41,8 +42,8 @@ const Features = () => {
 
             <div className="features__description">
                 <div className="features__description-box">
-                    <img
-                        className="features__image"
+                    <LazyLoadedImage
+                        imageClass="features__image"
                         src={ dailyStatsTrades }
                         alt="Niniwise journal"
                     />
@@ -57,8 +58,8 @@ const Features = () => {
                     <p>Charts or graphs to visualize trade data and track progress</p>
                 </div>
                 <div className="features__description-box">
-                    <img
-                        className="features__image"
+                    <LazyLoadedImage
+                        imageClass="features__image"
                         src={ niniwiseImage }
                         alt="Niniwise journal"
                     />
@@ -67,8 +68,8 @@ const Features = () => {
 
             <div className="features__description">
                 <div className="features__description-box">
-                    <img
-                        className="features__image"
+                    <LazyLoadedImage
+                        imageClass="features__image"
                         src={ niniwiseImage }
                         alt="Niniwise journal"
                     />
