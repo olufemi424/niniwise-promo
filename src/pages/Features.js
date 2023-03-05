@@ -1,6 +1,7 @@
 import niniwiseImage from "../assets/app-home.png";
 import niniwiseImage1 from "../assets/app-home1.png";
 import dailyStatsTrades from "../assets/daily-stats-screen.png";
+import imageviewer from "../assets/imageviewer.png";
 import backgroundImage from "../assets/backgrounds/timing-stock-market.jpeg";
 import HomeHero from "../components/HeroSection";
 import ButtonCta from "../components/ButtonCta";
@@ -60,7 +61,7 @@ const Features = () => {
                 <div className="features__description-box">
                     <LazyLoadedImage
                         imageClass="features__image"
-                        src={ niniwiseImage }
+                        src={ imageviewer }
                         alt="Niniwise journal"
                     />
                 </div>
